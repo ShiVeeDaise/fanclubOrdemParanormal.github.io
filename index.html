@@ -3,13 +3,27 @@
 
 <head> <!-- Cabeçalho do site -->
     <meta charset="UTF-8"> <!-- Define a codificação de caracteres -->
-    <title>Projeto Base</title> <!-- Título da aba do navegador -->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Ordem Paranormal Fan-Club</title> <!-- Título da aba do navegador -->
 
     <link rel="stylesheet" type="text/css" href="style.css"> <!-- Conecta o arquivo CSS -->
 </head>
 
 <body> <!-- Corpo visível do site -->
-    
+    <div class="menu-btn" onclink="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <nav class="menu">
+        <ul>
+            <li><a href="#">Inicio></li>
+            <li><a href="#">Sobre></li>
+            <li><a href="#">Contato></li>
+            
+        </ul>
+    </nav>    
 <h1>Título principal</h1> <!-- Maior e mais importante-->
 <h2>Subtitulo</h2>
 <h3>Seção</h3>
@@ -37,5 +51,11 @@
     <u>texto sublinhado
     
     
-    
+    <script>
+        function toggleMenu(){
+            document.querySelector(".menu-btn).classList.toggle("active")
+
+            document.querySelector(".menu").classList.toggle("active")
+            
+    </script>
 </body>
